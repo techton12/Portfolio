@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Techton</title>
+  <!---swiperJs link--->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!--fontawesome link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+  integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!--ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!---Google font link-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap"
+   rel="stylesheet">
+</head>
+<body class="bg-slate-100 font-[Montserrat]">
+  
+  <!--this is the header section containing the navbar----> 
+  <header id="navbar" class="fixed z-[9999] w-full flex justify-between items-center large:px-20 xxlarge:px-32 small:px-6 py-6 bg-blue-800 text-white shadow-sm shadow-blue-800">
+    <div class="text-3xl font-[Orbitron] font-extrabold cursor-pointer">Techton</div>
+    <nav class="nav-link xlarge:static xlarge:min-h-fit absolute min-h-[60vh] w-full top-20 left-[-100%] duration-500 overflow-hidden">
+      <ul class="flex nav-links xlarge:flex items-center xlarge:justify-end xlarge:p-0 xlarge:flex-row xlarge:bg-transparent small:bg-blue-800 small:flex-col small:px-6 small:py-10 small:gap-8 gap-8 font-sans">
+        <li><a href="#home" class="active hover:text-gray-200 js-scroll">Home</a></li>
+        <li><a href="#about" class="hover:text-gray-200 js-scroll">About</a></li>
+        <li><a href="#service" class="hover:text-gray-200 js-scroll">Service</a></li>
+        <li><a href="#review" class="hover:text-gray-200 js-scroll">Review</a></li>
+        <li><a href="#contact" class="hover:text-gray-200 js-scroll">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class="xlarge:hidden"><ion-icon name="menu" class="menubutton text-3xl cursor-pointer" onclick="onToggleMenu(this)"></ion-icon></button>
+  </header>
+
+<!--this is the hero section with the intro text and image---->
+<section id="home" class="xxlarge:px-32 small:px-6 large:px-20 pt-56 pb-32 h-fit w-full">
+    <div class="flex flex-row gap-2">
+        <div class="home_paragraph w-fit leading-10">
+           <p class="text-lg">Hello, My name is <span class="large:text-4xl font-sans small:text-3xl">Shelton Gayetay</span></p>
+            <h1 class="large:text-5xl py-4 text-blue-800 small:text-4xl">I build things for the web</h1>
+            <p class="break-words leading-normal text-lg">
+                I am a creative web developer specializing in creating dynamic, user-friendly websites and web applications.
+            </p>
+            <button type="button" class="w-48 h-14 text-xl my-6 text-blue-800 outline outline-blue-800 bg-transparent hover:outline-none
+             hover:bg-blue-800 hover:text-white mt-8">Hire Me</button>
+             <box-icon type='solid' name='castle'></box-icon>
+        </div>
+
+        <div class="w-fit">
+            <img src="home-right.png" alt="home-img" class="home_image w-fit h-fit small:hidden xlarge:block">
+        </div>
+    </div>
+    </section>
+
+  <!--this is the about section-->
+  <section id="about" class="xxlarge:px-32 large:px-20 small:px-6 bg-blue-800 h-fit">
+    <div class="xlarge:flex small:block py-10 gap-6">
+        <div class="w-full">
+            <img src="about-us.png" alt="this is the about img" class="about_image medium:w-full h-full">
+        </div>
+  
+        <div class="h-fit w-full text-white py-6 about_paragraph"> 
+            <h1 class="text-2xl pb-2">LEARN ABOUT ME</h1>
+            <hr class="w-[8rem] h-4"></hr>
+            <p class="">Hi, I'm Shelton Gayetay, a passionate web developer specializing in creating dynamic, user-friendly 
+                websites and web applications. I build responsive, high-performance digital experiences tailored to your needs.
+                Dive in, explore my work, and let's make the web a more beautiful place, with one line of code at a time.
+            </p>                                       
+
+            <div class="pt-6 inline-block w-full h-fit">
+                <h1 class="pb-2 text-2xl">SKILLS</h1> 
+                <hr class="w-[2rem] h-4"></hr>
+                <div class="space-y-4">
+                    <div class="flex flex-col gap-2">
+                        <h4>HTML</h4>
+                        <div class="bg-white w-[80%] h-fit">
+                            <div class="bg-blue-500 relative row text-center w-[90%] h-fit text-sm">90%</div>
+                        </div>
+                    </div>     
+                    <div class="flex flex-col gap-2">
+                        <h4>CSS</h4>
+                        <div class="bg-white w-[80%] h-fit">
+                            <div class="bg-blue-500 relative row text-center w-[85%] h-fit text-sm">85%</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h4>JAVSCRIPT</h4>
+                        <div class="bg-white w-[80%] h-fit">
+                            <div class="bg-blue-500 relative row text-center w-[50%] h-fit text-sm">50%</div>
+                        </div>
+                    </div>  
+                    <div class="flex flex-col gap-2">
+                        <h4>JQUERY</h4>
+                        <div class="bg-white w-[80%] h-fit">
+                            <div class="bg-blue-500 relative row text-center w-[70%] h-fit text-sm">70%</div>
+                        </div>
+                    </div> 
+                    <div>
+                        <button type="button" class="w-44 h-14 text-xl text-white outline outline-none bg-blue-500 hover:outline-none hover:bg-blue-600 hover:text-white mt-8">Contact Me </button>
+                    </div>   
+                </div> 
+            </div>
+        </div> 
+    </div>
+</section>
+
+  <!------this is the services section containing what I do-->
+  <section id="service" class="xxlarge:px-32 large:px-20 small:px-6">
+    <div class="service_data py-20 h-fit">
+        <h1 class="row text-center text-5xl font-bold pb-20">Services Offer</h1>
+
+        <div class="grid grid-cols-3 gap-6 medium:grid-cols-8 xlarge:grid-cols-12">
+            <div class="col-span-4 h-64 px-6 py-6 bg-transparent shadow-lg shadow-blue-800 outline outline-1 outline-slate-200 
+             transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 overflow-hidden">
+                <ion-icon name="cube-outline" class="text-5xl text-blue-500"></ion-icon>
+                <h1 class="text-lg font-semibold">UI/UX Design</h1>
+                <p class="text-wrap">With seamless and engaging digital experiences, I don't only create user-friendly
+                      and efficient interfaces but also visually appealing and easy to navigate. </p>
+            </div>
+            <div class="col-span-4 h-64 px-6 py-6 bg-transparent shadow-lg shadow-blue-800 outline outline-1 outline-slate-200 
+             transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 overflow-hidden">
+                <ion-icon name="code-slash-outline" class="text-5xl text-blue-500"></ion-icon>
+                <h1 class="text-lg font-semibold">Web Developement</h1>
+                <p>From a single landing page to a multi-purpose plaform, I build mordern websites and and web applications.
+                </p>
+            </div>
+            <div class="col-span-4 h-64 px-6 py-6 bg-transparent shadow-lg shadow-blue-800 outline outline-1 outline-slate-200 
+                 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 overflow-hidden">
+                <ion-icon name="color-palette-outline" class="text-5xl text-blue-500"></ion-icon></ion-icon>
+                <h1 class="text-lg font-semibold">Web Design</h1>
+                <p>With the right tools and a little blend of magic, I create design that are visually appelling and user-friendly.
+
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+  <!--this the testemonial section with the swiper js-->
+    <section id="review" class="xxlarge:px-32 large:px-20 small:px-6">
+        <div class="testemonial_data py-20 h-fit"> 
+        <h1 class="row text-center text-5xl font-bold pb-20">Testemonials</h1>
+        <div class="swiper w-full h-fit">
+            <div class="swiper-wrapper">
+  
+                <div class="swiper-slide w-fit small:px-4 medium:px-10 py-10 space-y-10 border border-blue-500">
+                    <span class="flex gap-2">
+                        <i class="fa-solid fa-quote-left text-3xl py-0  text-blue-500"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor</p>
+                    </span>
+                    <div class="flex gap-4 items-center">
+                        <img src="img1.jpg" alt="user-profile" class="w-20 h-20 rounded-full">        
+                        <span>
+                            <h3 class="text-lg font-semibold">Shelton Gayetay</h3>
+                            <p class="">Ceo, Techton</p>
+                         </span>
+                    </div>
+                </div>
+  
+                <div class="swiper-slide bg-transparent w-fit small:px-4 medium:px-10 py-10 space-y-10 border border-blue-500">
+                    <span class="flex gap-2">
+                        <i class="fa-solid fa-quote-left text-3xl py-0  text-blue-500"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor</p>
+                    </span>
+                    <div class="flex gap-4 items-center">
+                        <img src="img1.jpg" alt="user-profile" class="w-20 h-20 rounded-full">        
+                        <span>
+                            <h3 class="text-lg font-semibold">Shelton Gayetay</h3>
+                            <p class="">Ceo, Techton</p>
+                        </span>
+                    </div>
+                </div>
+  
+               <div class="swiper-slide bg-transparent w-fit small:px-4 medium:px-10 py-10 space-y-10 border border-blue-500">
+                    <span class="flex gap-2">
+                        <i class="fa-solid fa-quote-left text-3xl py-0  text-blue-500"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor</p>
+                    </span>
+                    <div class="flex gap-4 items-center">
+                        <img src="img1.jpg" alt="user-profile" class="w-20 h-20 rounded-full">        
+                        <span>
+                            <h3 class="text-lg font-semibold">Shelton Gayetay</h3>
+                            <p class="">Ceo, Techton</p>
+                        </span>
+                    </div>
+                </div>
+  
+                <div class="swiper-slide bg-transparent w-fit small:px-4 medium:px-10 py-10 space-y-10 border border-blue-500">
+                    <span class="flex gap-2">
+                        <i class="fa-solid fa-quote-left text-3xl py-0 text-blue-500"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nihil.lor</p>
+                    </span>
+                    <div class="flex gap-4 items-center">
+                        <img src="img1.jpg" alt="user-profile" class="w-20 h-20 rounded-full">        
+                        <span>
+                            <h3 class="text-lg font-semibold">Shelton Gayetay</h3>
+                            <p class="">Ceo, Techton</p>
+                        </span>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="relative top-14 bottom-o ">
+            <div class="swiper-pagination text-2xl"></div>
+        </div>
+        </div>
+    </section>
+
+  <!----this is the contact section-->
+   <section id="contact" class="xxlarge:px-32 large:px-20 small:px-6">
+    <div class="contact_data py-20 h-fit">
+        <h1 class="row text-center text-5xl font-bold pb-20">Contact</h1>  
+        <div class="xlarge:flex small:block max-h-fit">    
+            <div class="bg-blue-800 w-full py-20 text-white medium:px-16 large:px-10 shadow-lg shadow-blue-800 small:px-4">
+                <h2 class="text-3xl font-semibold">Get In Touch</h2>
+                <p class="py-4">Appreciate you for going through my portfolio. Please fill in the form and 
+                   leave a message.
+                </p>
+      
+                <h2 class="py-4 text-2xl">Contact</h2>
+                <span class="flex items-center gap-2">
+                    <ion-icon name="call-outline" class="text-lg"></ion-icon>
+                    <p class="">Phone: +231888611167</p>
+                </span>  
+                <span class="flex items-center gap-2">
+                    <ion-icon name="mail-outline" class="text-lg"></ion-icon>
+                    <p class="py-4 small:text-sm">Email: gayetayshelton16@gmail.com</p>
+                </span>  
+                <span class="flex items-center gap-2">
+                    <ion-icon name="location-outline" class="text-lg"></ion-icon>
+                    <p class="">Address: Duport road, paynesville, Monrovia, Liberia</p>
+                </span>  
+
+                <h1 class="py-6 text-2xl">Socials</h1>
+                <span class="flex gap-2">
+                    <a href="#"><ion-icon name="logo-facebook" class="text-2xl hover:text-slate-200"></ion-icon></a> 
+                    <a href="#"><ion-icon name="logo-instagram" class="text-2xl hover:text-slate-200"></ion-icon></a> 
+                    <a href="#"><ion-icon name="logo-whatsapp" class="text-2xl hover:text-slate-200"></ion-icon></a> 
+                    <a href="#"><ion-icon name="logo-github" class="text-2xl hover:text-slate-200"></ion-icon></a> 
+                </span>
+            </div>
+
+    <!----this the message form-------->
+            <div class="bg-slate-100 w-full py-10 medium:px-16 large:px-10 small:px-6 text-black shadow-lg shadow-blue-800">
+                <form action="">
+                    <div class="grid small:grid-cols-1 large:grid-cols-2 sm:grid-cols-2 gap-4">
+                        <span class="grid">
+                            <label for="firstName" class="mb-2">First Name</label>
+                            <input type="text" name="firstName" placeholder="Last name" class="w-full h-10 px-4 bg-transparent outline-1 outline-slate-300 outline focus:outline-blue-300" required>
+                        </span>
+                        <span class="grid">
+                            <label for="firstName" class="mb-2">Last Name</label>
+                            <input type="text" name="lastName" placeholder="Last name" class="w-full h-10 px-4 text-sm text-black bg-transparent outline-1 outline-slate-300 outline focus:outline-blue-300" required>
+                        </span>
+                    </div>        
+                    
+                    <span class="grid py-6">
+                        <label for="email" class="mb-2">Email</label>
+                        <input type="text" name="email" placeholder="Email" class="w-full h-10 px-4 bg-transparent outline-1 outline-slate-300 outline focus:outline-blue-300 text-sm text-black" required>
+                    </span>
+        
+                    <span class="grid py-2">
+                        <label for="message" class="mb-2">Message</label>
+                        <textarea name="message" rows="6" id="message" placeholder="Write your message.." 
+                        class="w-full px-4 py-2 text-sm bg-transparent outline-1 outline-slate-300 outline focus:outline-blue-300"></textarea>
+                    </span>
+
+                    <div class="pt-10">
+                        <button type="submit" placeholder="Submit" class="px-10 py-4 bg-blue-500 text-white hover:outline-none hover:bg-blue-600 hover:text-white">Send message</button>
+                    </div>
+               </form>  
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+     <!---this is the scroll to top button-->
+     <section class="small:px-0">
+        <div>
+            <button id="back-to-top" type="button" class="fixed right-10 bottom-10 bg-blue-600 py-0 px-1">
+                <ion-icon name="chevron-up-outline" class="text-white text-5xl"></ion-icon>
+            </button>
+        </div> 
+   </section>
+
+ <!-----this is the footer-->
+    <section class="">
+        <div class="w-full pt-10 bg-blue-800 text-white">
+            <h4 class="text-sm items-baseline">Copright @ 2024 Techton. All right reserved.</h4>
+        </div>    
+    </section>
+
+ 
+     
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+<!--scroll reveal js link-->
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="scrollreveal.min.js"></script>
+ 
+<script>
+    const scrollReveal = ScrollReveal({
+        origin: 'top',
+        distance: '60px',
+        delay: 375,
+        duration: 500,
+        reset: true
+    });
+    scrollReveal.reveal('.home_image', {origin: 'right'});
+    scrollReveal.reveal('.home_paragraph');
+    scrollReveal.reveal('.about_image', {origin: 'left'} );
+    scrollReveal.reveal('.about_paragraph');
+    scrollReveal.reveal('.service_data');
+    scrollReveal.reveal('.testemonial_data', {origin: 'left'});
+    scrollReveal.reveal('.contact_data')
+        
+</script>
+
+</body>
+</html>
