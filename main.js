@@ -17,7 +17,15 @@ navLinks.addEventListener('click', function(event) {
     }
 });
 
+// Close navLinks when clicking outside of it
+document.addEventListener('click', function(event) {
+    if (!navLinks.contains(event.target) && !menuButton.contains(event.target)) {
+        navLinks.classList.remove('left-[0%]');
+        menuButton.name = 'menu'; // Reset the menu button to 'menu'
+    }
+  });
 
+  
 //swiper js for the slider
 const swiper = new Swiper('.swiper', {
    grabCursor: true,
